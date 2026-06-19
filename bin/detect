@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ -f "$1/RustConfig" ] || [ -f "$1/rust-toolchain" ] || [ -f "$1/Cargo.toml" ]; then
-    echo "Rust"
+    echo "cogny-rust"
     exit 0
 else
     exit 1

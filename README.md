@@ -42,7 +42,7 @@ Optional `RustConfig` file in the app root:
 
 ## What we changed from upstream
 
-Trimmed to what we run on Heroku: the CI/test scaffolding (`.travis.yml`, `docker-compose-test.yml`, `test_buildpack`) was dropped. The `bin/compile` and `bin/detect` scripts are vendored verbatim.
+Trimmed to what we run on Heroku: the CI/test scaffolding (`.travis.yml`, `docker-compose-test.yml`, `test_buildpack`) was dropped. `bin/compile` is vendored verbatim. `bin/detect` is verbatim except for the framework label it prints (`cogny-rust` instead of `Rust`), which is what Heroku shows under the app's Frameworks list.
 
 ## Re-syncing from upstream
 
